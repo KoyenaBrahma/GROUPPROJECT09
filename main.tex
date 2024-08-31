@@ -1,32 +1,98 @@
-\documentclass{exam}
-\usepackage{graphicx} % Required for inserting images
+\documentclass{article}
+
+% Packages for additional functionalities
+\usepackage{amsmath} % For mathematical symbols and environments
+\usepackage{graphicx} % For including images
+\usepackage{hyperref} % For clickable hyperlinks
+\usepackage{listings} % For including code snippets
+
+% Title and Author
+\title{Introduction to \LaTeX}
+\author{KOYENA BRAHMA}
+\date{\today}
 
 \begin{document}
-	
-	\begin{center}
-		\fbox{\fbox{\parbox{5.5in}{\centering
-					Changing the submit button to Chin Tapak Dum Dum and fixing the disproportionate}}}
-	\end{center}
-	
-	\section{STEPS}
-	Changed the submit button to"Chin tapak Dum Dum through this code.
-	\begin{figure}[h!]
-		\centering
-		\includegraphics[width=0.5\linewidth]{JAVA.PNG}
-		\caption{JAVA CODE}
-		\label{fig:enter-label}
-	\end{figure}
-	\begin{itemize}
-		\item \textbf{Font Size and Style:} The font size and style have been adjusted for improved readability and consistency with the overall design.
-		\item \textbf{Background Color:} The background color of the button has been updated to create a more visually appealing and cohesive look.
-		\item \textbf{Font Color:} The font color has been modified to ensure strong contrast with the background, enhancing legibility.
-		\item \textbf{Element Proportions:} Any disproportionate elements have been corrected to achieve a more balanced and aesthetically pleasing design.
-	\end{itemize}
-	\section{OUTPUT}
-	\begin{figure}
-		\centering
-		\includegraphics[width=0.5\linewidth]{OUTPUT AFTER.PNG}
-		\caption{FINAL OUTPUT}
-		\label{fig:enter-label}
-	\end{figure}
+
+% Create the title page
+\maketitle
+
+% Include logo centered under the title
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=2cm]{LaTeX_logo.svg.png}
+   
+\end{figure}
+
+% Table of Contents
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\LaTeX{} is a typesetting system that is widely used for producing scientific and mathematical documents due to its powerful handling of formulas and bibliographies. It is also used for other types of documents, from simple letters to complete books.
+
+\section{Basic Document Structure}
+A basic \LaTeX{} document has the following structure:
+
+\begin{verbatim}
+\documentclass{article}
+\begin{document}
+% Your content here
+\end{document}
+\end{verbatim}
+
+\section{Text Formatting}
+\LaTeX{} provides various commands for text formatting. Here are some examples:
+
+\begin{itemize}
+    \item \textbf{Bold Text} is created using \texttt{\textbackslash textbf\{\}}.
+    \item \textit{Italic Text} is created using \texttt{\textbackslash textit\{\}}.
+    \item Underlined text can be created using \texttt{\textbackslash underline\{\}}.
+\end{itemize}
+
+\section{Mathematical Equations}
+One of the most powerful features of \LaTeX{} is its ability to typeset complex mathematical equations. For example:
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+Inline equations can be written using the \texttt{\$} symbol, like this: \(a^2 + b^2 = c^2\).
+
+\section{Inserting Images}
+You can include images in your \LaTeX{} document using the \texttt{graphicx} package. Here's an example:
+
+\begin{verbatim}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{example-image}
+    \caption{An example image.}
+    \label{fig:example}
+\end{figure}
+\end{verbatim}
+
+\section{Creating Lists}
+\LaTeX{} allows you to create both numbered and bulleted lists easily.
+
+\subsection{Bulleted List}
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\subsection{Numbered List}
+\begin{enumerate}
+    \item First item
+    \item Second item
+    \item Third item
+\end{enumerate}
+
+\section{Adding Hyperlinks}
+You can add hyperlinks in your document using the \texttt{hyperref} package. For example:
+
+\href{https://www.latex-project.org/}{Visit the \LaTeX{} project website.}
+
+\section{Conclusion}
+This document provides a brief introduction to some of the basic features of \LaTeX{}. There are many more advanced features that can help you create professional-looking documents.
+
 \end{document}
